@@ -17,7 +17,7 @@ def remove_html_tags(data):
     p = re.compile(r'<.*?>')
     return p.sub('', data)
 
-connector = MySQLdb.connect('localhost', 'admint6WDQQJ', '7IfhKdKAYHZK', 'korkoban', unix_socket="/var/lib/openshift/539735404382ecc2e500008a/mysql//socket/mysql.sock")
+connector = MySQLdb.connect('localhost', '***', '***', 'korkoban', unix_socket="/var/lib/openshift/539735404382ecc2e500008a/mysql//socket/mysql.sock")
 cursor = connector.cursor()
 cursor.execute("""
                     SELECT *

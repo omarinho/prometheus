@@ -17,7 +17,7 @@ fistParam = slugify(theArgs[1])
 citiesList = []
 
 if fistParam == 'omar52hjb':
-    connector = MySQLdb.connect('localhost', 'admint6WDQQJ', '7IfhKdKAYHZK', 'korkoban', unix_socket="/var/lib/openshift/539735404382ecc2e500008a/mysql//socket/mysql.sock")
+    connector = MySQLdb.connect('localhost', '***', '***', 'korkoban', unix_socket="/var/lib/openshift/539735404382ecc2e500008a/mysql//socket/mysql.sock")
     cursor = connector.cursor()
     cursor.execute("""
                     SELECT *
@@ -204,7 +204,7 @@ for aCity in citiesList:
     B4Coordinates = centerLatitude + ',' + southwestLongitude
     print 'B4 coordinates: ' + B4Coordinates
 
-    connector = MySQLdb.connect('localhost', 'admint6WDQQJ', '7IfhKdKAYHZK', 'korkoban', unix_socket="/var/lib/openshift/539735404382ecc2e500008a/mysql//socket/mysql.sock")
+    connector = MySQLdb.connect('localhost', '***', '***', 'korkoban', unix_socket="/var/lib/openshift/539735404382ecc2e500008a/mysql//socket/mysql.sock")
     cursor = connector.cursor()
 
     print "Truncating data..."

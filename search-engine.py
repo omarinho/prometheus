@@ -50,7 +50,7 @@ for coordinates in allcoordinates:
     for q in allq:
         try:
         	myRecords = facebook_graph.request("search", {'q' : q, 'type' : type, 'limit' : limit, 'offset' : 0, 'center' : coordinates, 'distance' : distance})
-        	connector = MySQLdb.connect('localhost', 'admint6WDQQJ', '7IfhKdKAYHZK', 'korkoban', unix_socket="/var/lib/openshift/539735404382ecc2e500008a/mysql//socket/mysql.sock")
+        	connector = MySQLdb.connect('localhost', '***', '***', 'korkoban', unix_socket="/var/lib/openshift/539735404382ecc2e500008a/mysql//socket/mysql.sock")
         	cursor = connector.cursor()
 
         	offset = shift
